@@ -1,0 +1,21 @@
+{
+  "name": "Being Creaciones",
+  "short_name": "Being Creaciones",
+  "start_url": "/src/index.html",
+  "display": "standalone",
+  "background_color": "#f0e5d8",
+  "theme_color": "#f7c6a5",
+  "description": "Venta de invitaciones y menús digitales con un enfoque en diseños luminosos y pasteles.",
+  "icons": [
+    {
+      "src": "/public/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/public/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

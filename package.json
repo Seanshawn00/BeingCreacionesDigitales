@@ -1,0 +1,22 @@
+{
+  "name": "being-creaciones",
+  "version": "1.0.0",
+  "description": "Sitio web para la venta de invitaciones y menús digitales.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build process not defined yet.'"
+  },
+  "keywords": [
+    "invitaciones",
+    "menús",
+    "digitales",
+    "venta",
+    "pastel"
+  ],
+  "author": "Being Creaciones",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
