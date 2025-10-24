@@ -1,0 +1,57 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #ff6f61; /* Color pastel luminoso */
+}
+
+a {
+    color: #4a90e2; /* Color pastel luminoso */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.button {
+    background-color: #ffccbc; /* Color pastel luminoso */
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #ffab91; /* Color pastel luminoso */
+}
+
+.header, .footer {
+    background-color: #ffe0b2; /* Color pastel luminoso */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

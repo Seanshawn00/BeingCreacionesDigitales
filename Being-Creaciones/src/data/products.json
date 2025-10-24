@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "Invitación Floral",
+        "price": 15.00,
+        "description": "Una hermosa invitación digital con un diseño floral elegante.",
+        "category": "invitaciones",
+        "image": "images/invitation-floral.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Menú Gourmet",
+        "price": 20.00,
+        "description": "Menú digital para restaurantes con un diseño moderno y atractivo.",
+        "category": "menús",
+        "image": "images/menu-gourmet.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Invitación de Cumpleaños",
+        "price": 12.00,
+        "description": "Invitación digital divertida y colorida para fiestas de cumpleaños.",
+        "category": "invitaciones",
+        "image": "images/invitation-cumpleaños.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Menú Infantil",
+        "price": 15.00,
+        "description": "Menú digital diseñado especialmente para niños, con ilustraciones divertidas.",
+        "category": "menús",
+        "image": "images/menu-infantil.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Invitación de Boda",
+        "price": 25.00,
+        "description": "Invitación digital elegante y romántica para bodas.",
+        "category": "invitaciones",
+        "image": "images/invitation-boda.jpg"
+    }
+]

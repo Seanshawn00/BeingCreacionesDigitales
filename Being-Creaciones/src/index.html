@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Being Creaciones</title>
+
+  <!-- Bootstrap 5 (framework con utilidades y secciones predeterminadas) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Estilos del proyecto (base, layout y tema pastel) -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/theme-pastel.css">
+
+  <style>
+    /* Ajustes rápidos para look profesional y colores pasteles luminosos */
+    :root{
+      --accent: #ffd6e0; /* rosa pastel */
+      --accent-2: #e6f7ff; /* celeste pastel */
+      --accent-3: #fff4cc; /* amarillo pastel */
+      --muted: #6c6c6c;
+    }
+    body { background: linear-gradient(180deg, #fff 0%, var(--accent-2) 100%); color: #222; }
+    .hero { padding: 4rem 0; }
+    .card-soft { border: 1px solid rgba(0,0,0,0.06); border-radius: 12px; background: rgba(255,255,255,0.85); }
+    .gallery img { width:100%; height:200px; object-fit:cover; border-radius:8px; }
+    .feature-badge { background: var(--accent); color: #222; border-radius: 8px; padding: .25rem .5rem; font-weight:600; }
+    footer { background: rgba(255,255,255,0.9); border-top:1px solid rgba(0,0,0,0.04); padding:2rem 0; margin-top:3rem; }
+    @media (min-width:992px){ .hero { min-height: 56vh; } .gallery img { height:220px; } }
+  </style>
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header class="bg-white shadow-sm">
+    <nav class="container navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand d-flex align-items-center gap-2" href=".">
+        <div class="rounded-circle" style="width:44px;height:44px;background:linear-gradient(45deg,var(--accent),var(--accent-2));"></div>
+        <div>
+          <strong>Being Creaciones</strong>
+          <div style="font-size:.75rem;color:var(--muted)">Invitaciones • Menús • Vector</div>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#invitaciones">Invitaciones</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menus">Menús</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Vectorizaciones</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop.html">Tienda</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-outline-primary ms-lg-3" href="contact.html">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container d-flex align-items-center">
+        <div class="row w-100">
+          <div class="col-lg-6 d-flex flex-column justify-content-center">
+            <span class="feature-badge mb-3">Diseños digitales</span>
+            <h1 class="display-5 fw-bold">Invitaciones y menús digitales con estilo pastel</h1>
+            <p class="lead text-muted">Plantillas listas para personalizar, entregas digitales inmediatas y servicios profesionales de vectorización y packaging.</p>
+            <div class="d-flex gap-2">
+              <a href="#productos-destacados" class="btn btn-primary btn-lg">Ver productos</a>
+              <a href="shop.html" class="btn btn-outline-secondary btn-lg">Ir a la tienda</a>
+            </div>
+            <ul class="mt-4 text-muted small">
+              <li>Entrega digital | Archivos editables (PSD, AI, SVG)</li>
+              <li>Soporte y personalización por encargo</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6 d-none d-lg-flex justify-content-center align-items-center">
+            <div class="card card-soft p-3 w-100">
+              <div class="d-flex gap-2">
+                <img src="images/invitacion-destacada.jpg" alt="Invitación destacada" style="width:120px;height:140px;object-fit:cover;border-radius:8px;">
+                <div>
+                  <h5 class="mb-1">Pack cumpleaños pastel</h5>
+                  <p class="mb-2 text-muted small">Incluye invitación editable + tarjeta de agradecimiento</p>
+                  <div class="d-flex gap-2">
+                    <a class="btn btn-sm btn-outline-primary" href="shop.html#invitaciones">Ver pack</a>
+                    <a class="btn btn-sm btn-primary" href="contact.html">Personalizar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- /container -->
+    </section>
+
+    <!-- Productos destacados (cards con flex/grid) -->
+    <section id="productos-destacados" class="py-5">
+      <div class="container">
+        <h2 class="h4 mb-4">Productos más vendidos</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 card-soft p-3 d-flex flex-column">
+              <img src="images/invitacion-destacada.jpg" class="rounded mb-3" alt="Invitaciones digitales" style="height:160px;object-fit:cover;">
+              <h5>Invitaciones digitales</h5>
+              <p class="text-muted flex-grow-1">Plantillas personalizables para cumpleaños, baby showers y eventos. Entrega rápida.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="shop.html#invitaciones" class="btn btn-sm btn-primary">Ver invitaciones</a>
+                <small class="text-muted">Desde $5</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 card-soft p-3 d-flex flex-column">
+              <img src="images/menu-destacado.jpg" class="rounded mb-3" alt="Menús digitales" style="height:160px;object-fit:cover;">
+              <h5>Menús digitales</h5>
+              <p class="text-muted flex-grow-1">Diseños responsivos y listos para imprimir o mostrar en tablets y web.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="shop.html#menus" class="btn btn-sm btn-primary">Ver menús</a>
+                <small class="text-muted">Adaptaciones y packs</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 card-soft p-3 d-flex flex-column">
+              <img src="images/vectorizacion-destacada.jpg" class="rounded mb-3" alt="Vectorizaciones" style="height:160px;object-fit:cover;">
+              <h5>Vectorizaciones</h5>
+              <p class="text-muted flex-grow-1">Logotipos y trazos pasados a SVG/EPS para impresión y web.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="contact.html#vectorizacion" class="btn btn-sm btn-primary">Solicitar</a>
+                <small class="text-muted">Entrega en 24-48h</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galería invitaciones (grid responsive con flex/grid) -->
+    <section id="invitaciones" class="py-5 bg-white">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h2 class="h4">Invitaciones digitales</h2>
+          <a href="shop.html#invitaciones" class="small text-decoration-none">Ver todas →</a>
+        </div>
+
+        <div class="row g-3 gallery">
+          <div class="col-6 col-md-3"><figure class="card-soft p-2"><img src="images/invitacion-1.jpg" alt="Cumpleaños floral"><figcaption class="mt-2 small text-muted">Cumpleaños floral</figcaption></figure></div>
+          <div class="col-6 col-md-3"><figure class="card-soft p-2"><img src="images/invitacion-2.jpg" alt="Invitación infantil colorida"><figcaption class="mt-2 small text-muted">Invitación infantil colorida</figcaption></figure></div>
+          <div class="col-6 col-md-3"><figure class="card-soft p-2"><img src="images/invitacion-3.jpg" alt="Invitación minimal elegante"><figcaption class="mt-2 small text-muted">Invitación minimal elegante</figcaption></figure></div>
+          <div class="col-6 col-md-3"><figure class="card-soft p-2"><img src="images/invitacion-4.jpg" alt="Invitación temática"><figcaption class="mt-2 small text-muted">Tema personalizado</figcaption></figure></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galería menús -->
+    <section id="menus" class="py-5">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h2 class="h4">Menús digitales</h2>
+          <a href="shop.html#menus" class="small text-decoration-none">Ver todos →</a>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-md-4"><div class="card-soft p-2"><img src="images/menu-1.jpg" alt="Restaurante moderno" class="w-100"><div class="mt-2 small text-muted">Restaurante moderno</div></div></div>
+          <div class="col-md-4"><div class="card-soft p-2"><img src="images/menu-2.jpg" alt="Café artesanal" class="w-100"><div class="mt-2 small text-muted">Café artesanal</div></div></div>
+          <div class="col-md-4"><div class="card-soft p-2"><img src="images/menu-3.jpg" alt="Menú delivery simple" class="w-100"><div class="mt-2 small text-muted">Delivery simple</div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios especializados -->
+    <section id="servicios" class="py-5 bg-white">
+      <div class="container">
+        <h2 class="h4 mb-4">Servicios especializados</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card card-soft p-3 h-100 d-flex flex-column">
+              <h5>Vectorizaciones</h5>
+              <p class="text-muted flex-grow-1">Archivos SVG/EPS listos para impresión y producción.</p>
+              <a href="contact.html#vectorizacion" class="btn btn-sm btn-primary">Solicitar</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-soft p-3 h-100 d-flex flex-column">
+              <h5>Patrones imprimibles</h5>
+              <p class="text-muted flex-grow-1">Sets de patrones para papelería y packaging.</p>
+              <a href="shop.html#patrones" class="btn btn-sm btn-primary">Explorar</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-soft p-3 h-100 d-flex flex-column">
+              <h5>Packaging digital</h5>
+              <p class="text-muted flex-grow-1">Mockups y plantillas profesionales.</p>
+              <a href="contact.html#packaging" class="btn btn-sm btn-primary">Pedir cotización</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA final -->
+    <section class="py-5">
+      <div class="container text-center">
+        <h3>Listo para empezar?</h3>
+        <p class="text-muted">Cuéntanos tu idea y te enviamos una propuesta.</p>
+        <a class="btn btn-lg btn-primary" href="contact.html">Contactar ahora</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div class="mb-3 mb-md-0">
+        <strong>Being Creaciones</strong>
+        <div class="small text-muted">Invitaciones • Menús • Vectorizaciones</div>
+      </div>
+      <div class="text-muted small">© <span id="year"></span> Being Creaciones — Todos los derechos reservados</div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Pequeños scripts
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
